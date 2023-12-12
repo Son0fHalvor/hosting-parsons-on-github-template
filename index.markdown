@@ -6,22 +6,23 @@ layout: default
 title: Multiple Parson's Problems on One Page
 ---
 # Parsons Practice
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+### Instructions
+rearange the code to make Volume = 3120
+<div id="Unique 1-sortableTrash" class="sortable-code"></div> 
+<div id="Unique 1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="Unique 1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Unique 1-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "let height = $$toggle::20::10$$\n" +
     "let width = $$toggle::15::12$$\n" +
     "let length = $$toggle::25::13$$\n" +
-    "//volume = 3120//\n" +
     "let volume = height*width*length";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "Unique 1-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LanguageTranslationGrader,
     "exec_limit": 2500,
@@ -29,12 +30,12 @@ title: Multiple Parson's Problems on One Page
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "executable_code": "height = $$toggle::20::10$$\nwidth = $$toggle::15::12$$\nlength = $$toggle::25::13$$\n#volume = 3120\nvolume = height*width*length",
+    "executable_code": "height = $$toggle::20::10$$\nwidth = $$toggle::15::12$$\nlength = $$toggle::25::13$$\nvolume = height*width*length",
     "programmingLang": "java",
     "vartests": [
         {
             "message": "The volume = 3120",
-            "initcode": "Volume = 3120",
+            "initcode": "",
             "code": "",
             "variables": {
                 "volume": 3120
@@ -44,11 +45,11 @@ title: Multiple Parson's Problems on One Page
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#Unique 1-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#Unique 1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
