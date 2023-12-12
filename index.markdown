@@ -24,7 +24,7 @@ rearrange the code to make Volume = 3120
     "let volume = height*width*length";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "problem1-sortable",
-    "max_wrong_lines": 10,
+    "max_wrong_lines": 1,
     "grader": ParsonsWidget._graders.LanguageTranslationGrader,
     "exec_limit": 2500,
     "can_indent": true,
