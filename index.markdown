@@ -30,7 +30,6 @@ rearrange the code to make Volume = 3120
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
     "trashId": "problem1-sortableTrash",
     "executable_code": "height = $$toggle::20::10$$\nwidth = $$toggle::15::12$$\nlength = $$toggle::25::13$$\nvolume = height*width*length",
     "programmingLang": "java",
