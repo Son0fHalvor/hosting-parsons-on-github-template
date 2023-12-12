@@ -9,12 +9,12 @@ title: Multiple Parson's Problems on One Page
 ### Instructions
 rearrange the code to make Volume = 3120
 
-<div id="Unique 1-sortableTrash" class="sortable-code"></div> 
-<div id="Unique 1-sortable" class="sortable-code"></div> 
+<div id="Unique-sortableTrash" class="sortable-code"></div> 
+<div id="Unique-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="Unique 1-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="Unique 1-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="Unique-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Unique-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -23,7 +23,7 @@ rearrange the code to make Volume = 3120
     "let length = $$toggle::25::13$$\n" +
     "let volume = height*width*length";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "Unique 1-sortable",
+    "sortableId": "Unique-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LanguageTranslationGrader,
     "exec_limit": 2500,
@@ -46,11 +46,11 @@ rearrange the code to make Volume = 3120
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#Unique 1-newInstanceLink").click(function(event){ 
+  $("#Unique-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#Unique 1-feedbackLink").click(function(event){ 
+  $("#Unique-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
