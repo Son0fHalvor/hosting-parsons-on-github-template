@@ -7,7 +7,8 @@ title: Multiple Parson's Problems on One Page
 ---
 # Parsons Practice
 ### Instructions
-rearange the code to make Volume = 3120
+rearrange the code to make Volume = 3120
+
 <div id="Unique 1-sortableTrash" class="sortable-code"></div> 
 <div id="Unique 1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
