@@ -71,7 +71,7 @@ rearrange the code so that myArray is squared and then display the original arra
   var initial = "let myArray = [1, 2, 3, 4, 5];\n" +
     "let newArray = [];\n" +
     "for (let i = 0; i &lt; myArray.length; i++) {\n" +
-    "    let squaredValue = myArray[i] ** 2;\n" +
+    "    const squaredValue = myArray[i] ** 2;\n" +
     "    newArray.push(squaredValue);\n" +
     "}\n" +
     "console.log(&quot;Original Array:&quot;, myArray);\n" +
