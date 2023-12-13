@@ -56,6 +56,51 @@ rearrange the code to make Volume = 3120
   }); 
 })(); 
 </script>
+# Parsons Practice
+### Instructions
+rearrange the code so that myArray is squared and then display the original array and the squared array to the console.
+<div id="problem2-sortableTrash" class="sortable-code"></div> 
+<div id="problem2-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="problem2-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="problem2-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "let myArray = [1, 2, 3, 4, 5];\n" +
+    "let newArray = [];\n" +
+    "for (let i = 0; i &lt; myArray.length; i++) {\n" +
+    "    let squaredValue = myArray[i] ** 2;\n" +
+    "    newArray.push(squaredValue);\n" +
+    "}\n" +
+    "console.log(&quot;Original Array:&quot;, myArray);\n" +
+    "console.log(&quot;Squared Values:&quot;, newArray);\n" +
+    "myArray.push(squaredValue); #distractor\n" +
+    "for (let i = 0; i &lt; newArray.length; i++) { #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "problem2-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "problem2-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#problem2-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#problem2-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 ### Implementation Notes
 
